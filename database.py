@@ -17,6 +17,12 @@ def get_all_cats():
     cats = session.query(Cat).all()
     return cats
 
+<<<<<<< HEAD
 def get_cat(id):
 	cat = session.query(cat).filter_by(id = id).first()
 	return cat 
+=======
+def find_cat(number):
+	cat = session.query(Cat).filter_by(id=number).first()
+	return cats
+>>>>>>> 99f6c5c5474db4767939c4d93959e4a68fcce36f
